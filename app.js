@@ -34,7 +34,7 @@ app.post("/api/data", (req, res) => {
   const pageSize = parseInt(req.query.pageSize) || 10;
   const offset = (page - 1) * pageSize;
 
-  // Get columns parameter from body
+  // Get columns parameter from body.
   const columns = req.body.columns;
   console.log(columns);
 
