@@ -18,7 +18,7 @@ const db = mysql.createConnection({
   database: process.env.DB,
 });
 
-// Connect to MySQL
+// Connect to MySQL with API
 db.connect((err) => {
   if (err) {
     console.error("Error connecting to MySQL:", err);
