@@ -18,7 +18,7 @@ const db = mysql.createConnection({
   database: process.env.DB,
 });
 
-// Connect to MySQL with API
+// Connect to MySQL with API.
 db.connect((err) => {
   if (err) {
     console.error("Error connecting to MySQL:", err);
@@ -117,6 +117,7 @@ app.get("/api/columns", (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
 
 
 
