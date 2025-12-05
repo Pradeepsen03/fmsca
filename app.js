@@ -10,7 +10,7 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 
-// Create a MySQL connection
+// Create a MySQL connection.
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -117,6 +117,7 @@ app.get("/api/columns", (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
 
 
 
