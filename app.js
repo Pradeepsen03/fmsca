@@ -46,7 +46,7 @@ app.post("/api/data", (req, res) => {
     return res.status(400).send("Invalid page or pageSize");
   }
 
-  // Query to get total count of records
+  // Query to get total count of records.
   db.query(
     "SELECT COUNT(*) AS total FROM fmsca_records",
     (err, countResult) => {
@@ -117,6 +117,7 @@ app.get("/api/columns", (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
 
 
 
